@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		CEA9EE252385596000480E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9EE232385596000480E09 /* Main.storyboard */; };
 		CEA9EE272385596300480E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9EE262385596300480E09 /* Assets.xcassets */; };
 		CEA9EE2A2385596300480E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9EE282385596300480E09 /* LaunchScreen.storyboard */; };
+		CEA9EE33238559AD00480E09 /* OpenCombine in Frameworks */ = {isa = PBXBuildFile; productRef = CEA9EE32238559AD00480E09 /* OpenCombine */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA9EE33238559AD00480E09 /* OpenCombine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = OpenCombineTest;
+			packageProductDependencies = (
+				CEA9EE32238559AD00480E09 /* OpenCombine */,
+			);
 			productName = OpenCombineTest;
 			productReference = CEA9EE1A2385596000480E09 /* OpenCombineTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = CEA9EE112385596000480E09;
+			packageReferences = (
+				CEA9EE31238559AD00480E09 /* XCRemoteSwiftPackageReference "OpenCombine" */,
+			);
 			productRefGroup = CEA9EE1B2385596000480E09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,8 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CFVYFW4KJ8;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OpenCombineTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mecca.OpenCombineTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CFVYFW4KJ8;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OpenCombineTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mecca.OpenCombineTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEA9EE31238559AD00480E09 /* XCRemoteSwiftPackageReference "OpenCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/broadwaylamb/OpenCombine.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEA9EE32238559AD00480E09 /* OpenCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA9EE31238559AD00480E09 /* XCRemoteSwiftPackageReference "OpenCombine" */;
+			productName = OpenCombine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEA9EE122385596000480E09 /* Project object */;
 }
